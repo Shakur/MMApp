@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>MMApp</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>mqMachines</servlet-name>
+    <servlet-class>se.enfo.mmapp.servlet.MqMachines</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>mqMachines</servlet-name>
+    <url-pattern>/mqMachines</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>queueManagers</servlet-name>
+    <servlet-class>se.enfo.mmapp.servlet.QueueManagers</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>queueManagers</servlet-name>
+    <url-pattern>/queueManagers</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>qm</servlet-name>
+    <servlet-class>se.enfo.mmapp.servlet.QM</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>qm</servlet-name>
+    <url-pattern>/qm</url-pattern>
+  </servlet-mapping>
+</web-app>

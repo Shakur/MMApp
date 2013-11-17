@@ -1,0 +1,10 @@
+.wrapper {
+	background-color: blue;
+}
+.divheader {
+	text-align:center;
+	font-size: 14px;
+	color: white;
+	font-family:"Times New Roman";
+	float: left;
+} 
